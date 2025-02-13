@@ -1,0 +1,373 @@
+/*padronização para TODOS os elementos*/
+*{
+    color: #ffffff; /*cor da fonte*/
+    font-family: 'Segoe UI', 'Roboto'; /*familia tipográfica*/
+}
+
+/*Estilização do Body*/
+body {
+    background-color: #1a0c2b;/*cor do fundo*/
+    min-height: 100vh;
+    margin: 0;
+    display: flex; /* torna o display flexivel*/
+    flex-direction: column; /*alinha os displays em colunas*/
+    padding: 0 40px;
+}
+
+.body-home{
+    justify-content: center; /*alinha o conteúdo no centro*/
+}
+
+.titulo-principal {
+    font-size: 100px;
+}
+
+.titulo-principal span{
+    color: #F34D49;
+}
+
+.container-home{
+    display: flex; /*permite movimentar os elementos*/
+    align-items: center; /*centraliza verticalmente*/
+    justify-content: space-between; /*Alinha os itens dentro do container*/
+}
+
+.container-home img{
+    width: 20%; /*altura*/
+    height: 20%; /*largura*/
+    
+}
+
+.titulo-secundario{
+    font-size: 35px;
+}
+
+.menu{
+    margin-top: 50px; /*Define a margem no topo*/
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 25px;
+    border-left: #F34D49 3px solid;
+    padding: 0 15px;
+}
+
+.menu a:first-child{ /*Tira a borda do primeiro link*/
+    border:none;
+    padding-left: 0; /*Tira o espaçamento à esquerda, de dentro para fora.*/
+}
+
+.menu a:hover{ /*Para colorir as letras*/
+    color: #F34D49; 
+}
+
+/* Estilização página Sobre Mim */
+
+.header-principal{
+    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+    
+}
+
+.title-header{
+    display: flex;
+    align-items: center;
+}
+
+.title-header img{
+    width: 10%;
+    height: 30%;
+    margin-right: 10px;
+}
+
+.title-header h1{
+    font-size: 50px;
+}
+
+.link-icon{
+    font-size: 40px;
+}
+
+.link-icon i:hover{
+    color: #F34D49;
+}
+
+.card-projeto{
+    background-color: #a013dd21;
+    border: #F34D49 4px solid;
+    padding: 0px 15px;
+    border-radius: 15px;
+    width: 25%;
+}
+
+.card-projeto h3{
+    border-bottom: #F34D49 1px solid;
+    margin: 0px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.main-projeto{
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    font-size: 19px;
+    text-align: justify;
+}
+
+.main-info{
+    margin: 0 70px;
+}
+
+.main-habilidades{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.card-habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-habilidades h4{
+    margin: 15px;
+    font-size: 15px;
+    
+}
+
+.card-habilidades h4:hover{
+   color: #F34D49;
+}
+
+.card-habilidades img{
+    width: 35%;
+    height: 35%;  
+}
+
+.main-contato{
+    display: flex;
+    justify-content: space-around;
+}
+
+.div1-contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1-contatos h2{
+    font-size: 30px;
+}
+
+.div1-contatos a{
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.icon-contatos i{ /*Utilizar o i para preencher o icone com a cor selecionada*/
+    font-size: 30px;
+    color: #F34D49;
+    margin-right: 5px;
+}
+
+.div1-contatos a:hover{
+    color:#F34D49
+}
+
+.icons-contatos{
+   margin: 20px 0; 
+}
+
+.div2-contatos h2{
+    font-size: 30px;
+}
+
+.input-grupo{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-grupo label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.input-grupo input, .input-grupo textarea{
+    padding: 10px;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    color: #1a0c2b;
+    box-sizing: border-box;
+}
+
+.div2-contatos{
+    width: 50%;
+    max-width: 400px;
+}
+
+.div2-contatos h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.envia-form{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #F34D49; 
+    color: #1a0c2b;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.envia-form:hover{
+    background-color: #F34D4987;
+    color: #ffffff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .titulo-principal{
+        font-size: 50px;
+    }
+    .container-home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+    .container-home img{
+        width: 50%;
+    }
+    .titulo-secundario{
+        font-size: 15px;
+        text-align: center;
+    }
+    .menu a{
+        font-size: 15px;
+        border-bottom: #F34D49 1px solid;
+        border-left: none;
+        padding: 0;
+        text-align: center;
+        margin: 3px 0;
+    }
+    .menu a:first-child{
+        border-bottom: #F34D49 1px solid;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .title-header h1{
+        font-size: 25px;
+    }
+
+    .title-header img{
+        width: 15%;
+        margin-right: 5px;
+    }
+
+    .link-icon{
+        font-size: 20px;
+    }
+
+    body{
+        padding: 20px;
+    }
+    
+    .main-info{
+        margin: 0 15px;
+    }
+
+    .p{
+        font-size: 12px;
+    }
+
+    .main-projeto{
+        flex-direction: column;
+    }
+
+    .card-projeto{
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    .card-projeto h3{
+        font-size: 20px;
+        padding: 5px 0;
+    }
+
+    .main-habilidades{
+        flex-direction: column;
+        
+    }
+
+    .card-habilidades{
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .card-habilidades h4{
+        margin-bottom: 5px;
+    }
+
+    .main-contato{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        }
+    
+    .div2-contatos{
+        width: 100%;
+    }
+
+    .div1-contatos h2, .div2-contatos h2{
+        font-size: 20px;
+    }
+
+    .input-grupo{
+        font-size: 14px;
+    }
+    
+    .input-grupo input, .input-grupo textarea, .envia-form{
+        padding: 5px;
+    }
+
+    .icons-contatos{
+        margin: 3px;
+    }
+    
+    .div1-contatos a{
+        font-size: 16px;
+    }
+
+    .icon-contatos i{
+        font-size: 30px;
+    }
+
+    .div1-contatos h2{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
